@@ -3,7 +3,7 @@
 <!-- repository     : https://github.com/HanPutra/bs-portfolio -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -38,8 +38,84 @@
 
     <title>Handika Putra Bootstrap Portfolio</title>
   </head>
-  <body>
-    <h1>Handika Putra</h1>
+  <body class="bg-dark text-light">
+    <!-- nav -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <img
+            src="assets/img/logo-hp-dark-big.svg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Handika Putra
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fw-semibold ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#about">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- main -->
+    <main>
+      <!-- about -->
+      <div class="about d-flex justify-content-evenly align-items-center vw-100 vh-100" id="about">
+        <div
+          class="about-text bg-light text-dark fw-semibold rounded-4 fs-5 ps-1 d-flex justify-content-center"
+          style="height: 33.3vh; width: 33.3vw"
+        >
+          <p class="m-auto">
+            Hi, I'm Handika Putra <br />
+            a web developer and linux enthusiast. <br />
+            I love coding and building web applications. <br />
+            My skills include HTML, CSS, and JavaScript. <br />
+            I'm passionate about learning new technologies and improving my craft.
+          </p>
+        </div>
+        <div
+          class="about-image position-relative rounded-circle bg-light overflow-hidden"
+          style="height: 33.3vh; width: 33.3vh"
+        >
+          <img src="assets/img/logo-hp-dark-text.svg" alt="logo HP" class="img-fluid position-absolute" />
+          <img src="assets/img/handika-java.png" alt="Handika use Java Clothes" class="img-fluid position-absolute" />
+        </div>
+      </div>
+      <!-- end of about -->
+      <div class="skills" id="skills"></div>
+      <h1>Handika Putra</h1>
+    </main>
+    <!-- end of main -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
