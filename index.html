@@ -40,7 +40,7 @@
   </head>
   <body class="bg-dark text-light">
     <!-- nav -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-md bg-light" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#">
           <img
@@ -89,8 +89,10 @@
     <!-- main -->
     <main class="container-fluid vw-100 min-vh-100 p-0" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
       <!-- about -->
-      <div class="row w-100 vh-100" id="about">
-        <div class="col-6 d-flex justify-content-end align-items-center">
+      <div class="row row-cols-md-1 w-100 vh-100" id="about">
+        <div
+          class="col-lg-6 d-flex justify-content-lg-end justify-content-md-center align-items-lg-center align-items-md-start order-lg-1 order-md-2"
+        >
           <div class="bg-light text-dark fw-semibold rounded-4 fs-5 d-flex justify-content-center w-75 ps-3 py-3">
             <p class="m-auto">
               Hi, I'm Handika Putra <br />
@@ -101,10 +103,25 @@
             </p>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center">
-          <div class="position-relative rounded-circle bg-light overflow-hidden" style="width: 33.3vh; height: 33.3vh">
-            <img src="assets/img/logo-hp-dark-text.svg" alt="logo HP" class="img-fluid position-absolute" />
-            <img src="assets/img/handika-java.png" alt="Handika use Java Clothes" class="img-fluid position-absolute" />
+        <div class="col-lg-6 d-flex justify-content-center align-items-center order-lg-2 order-md-1">
+          <div class="row">
+            <div class="col">
+              <div
+                class="position-relative rounded-circle bg-light overflow-hidden"
+                style="width: 33.3vh; height: 33.3vh"
+              >
+                <img
+                  src="assets/img/logo-hp-dark-text.svg"
+                  alt="logo HP"
+                  class="img-fluid position-absolute w-100 h-100"
+                />
+                <img
+                  src="assets/img/handika-java.png"
+                  alt="Handika use Java Clothes"
+                  class="img-fluid position-absolute w-100 h-100"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -324,7 +341,7 @@
           <p class="fs-5 fw-semibold">moch.handika.putra.i@gmail.com</p>
         </div>
         <div class="col">
-          <p class="fs-5 fw-semibold mt-5 pt-5">
+          <p class="fs-6 fw-semibold mt-5 pt-5">
             &copy; CopyRight 2024. <a href="#" class="text-dark text-decoration-none">Handika Putra</a>. All Right
             Reserved.
           </p>
