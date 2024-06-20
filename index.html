@@ -87,10 +87,10 @@
     <!-- end of nav -->
 
     <!-- main -->
-    <main class="container-fluid vw-100 min-vh-100" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+    <main class="container-fluid vw-100 min-vh-100 p-0" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
       <!-- about -->
       <div class="about row w-100 vh-100" id="about">
-        <div class="col-6 bg-success d-flex justify-content-end align-items-center">
+        <div class="col-6 d-flex justify-content-end align-items-center">
           <div class="bg-light text-dark fw-semibold rounded-4 fs-5 d-flex justify-content-center w-75 ps-3 py-3">
             <p class="m-auto">
               Hi, I'm Handika Putra <br />
@@ -101,8 +101,8 @@
             </p>
           </div>
         </div>
-        <div class="col-6 bg-info d-flex justify-content-center align-items-center">
-          <div class="position-relative rounded-circle bg-light overflow-hidden w-50 h-50">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="position-relative rounded-circle bg-light overflow-hidden" style="width: 33.3vh; height: 33.3vh">
             <img src="assets/img/logo-hp-dark-text.svg" alt="logo HP" class="img-fluid position-absolute" />
             <img src="assets/img/handika-java.png" alt="Handika use Java Clothes" class="img-fluid position-absolute" />
           </div>
@@ -110,16 +110,33 @@
       </div>
       <!-- end of about -->
       <!-- skills -->
-      <div class="skills bg-danger d-flex flex-column align-items-center vw-100 vh-100 pt-5" id="skills">
-        <p class="mt-2 bg-warning fs-4">Skills</p>
-        <div class="bg-success fs-5">Tech Stack</div>
-        <div class="bg-secondary d-flex w-25">
-          <p class="flex-grow-1 bg-warning">HTML</p>
-          <p class="flex-grow-1 bg-success">CSS</p>
-          <p class="flex-grow-1 bg-info">JavaScript</p>
+      <div class="skills d-flex flex-column align-items-center vw-100 vh-100 pt-5 m-0" id="skills">
+        <p class="mt-2 fs-4 fw-bold p-2 mb-0">Skills</p>
+        <div class="d-flex w-75 justify-content-center align-items-center">
+          <p class="fs-5 fw-semibold p-2 m-0 text-end w-25 pe-4">Tech Stack</p>
+          <hr class="border border-light border-2 rounded-pill opacity-100 w-75" style="height: 1px" />
+        </div>
+        <div class="row w-25 text-center fw-semibold mt-2 p-2">
+          <p class="col m-0">HTML</p>
+          <p class="col m-0">CSS</p>
+          <p class="col m-0">JavaScript</p>
+        </div>
+        <div class="d-flex w-75 justify-content-center align-items-center">
+          <p class="fs-5 fw-semibold p-2 m-0 text-end w-25 pe-4">Tools Used</p>
+          <hr class="border border-light border-2 rounded-pill opacity-100 w-75" style="height: 1px" />
+        </div>
+        <div class="row w-25 text-center fw-semibold mt-2 p-2">
+          <p class="col m-0">Git</p>
+          <p class="col m-0">GitHub</p>
+          <p class="col m-0">VSCode</p>
         </div>
       </div>
       <!-- end of skills -->
+      <!-- projects -->
+      <div class="skills d-flex flex-column align-items-center vw-100 vh-100 pt-5 m-0" id="projects">
+        <p class="mt-2 fs-4 fw-bold p-2 mb-0">Projects</p>
+      </div>
+      <!-- end of projects -->
       <h1>Handika Putra</h1>
     </main>
     <!-- end of main -->
